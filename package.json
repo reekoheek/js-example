@@ -1,0 +1,29 @@
+{
+  "name": "js-example",
+  "version": "0.0.1",
+  "description": "Javascript example",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pre-commit": "npm run lint && npm test",
+    "pre-push": "npm run lint && npm test",
+    "test": "mocha test/**"
+  },
+  "author": "Ganesha <reekoheek@gmail.com> (http://sagara.id)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reekoheek/js-example.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-xinix": "^1.0.4",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "husky": "^0.14.3"
+  }
+}
